@@ -1,6 +1,6 @@
 <?php
 
-	$pdo = new PDO('mysql:host=localhost;dbname=productes_general', "root", "Marzo20!");
+	$pdo = new PDO('mysql:host=localhost;dbname=productes_general', "****", "*****");
 
 try
 {

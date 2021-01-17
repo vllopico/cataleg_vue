@@ -1,0 +1,222 @@
+[
+	{
+		"id" : 1,
+		"referencia" : "p_0001",
+		"nom" : "Producte 1",
+		"preu" : 2.00,
+		"iva" : 4.00,
+		"ean13" : null,
+		"categoria" : "A",
+		"subcategoria" : "1",
+		"imatge" : "1.png"
+	},
+	{
+		"id" : 2,
+		"referencia" : "p_0002",
+		"nom" : "Producte 2",
+		"preu" : 4.00,
+		"iva" : 4.00,
+		"ean13" : null,
+		"categoria" : "A",
+		"subcategoria" : "1",
+		"imatge" : "2.png"
+	},
+	{
+		"id" : 3,
+		"referencia" : "p_0003",
+		"nom" : "Producte 3",
+		"preu" : 6.00,
+		"iva" : 10.00,
+		"ean13" : null,
+		"categoria" : "A",
+		"subcategoria" : "1",
+		"imatge" : "3.png"
+	},
+	{
+		"id" : 4,
+		"referencia" : "p_0004",
+		"nom" : "Producte 4",
+		"preu" : 8.00,
+		"iva" : 21.00,
+		"ean13" : null,
+		"categoria" : "A",
+		"subcategoria" : "1",
+		"imatge" : "4.png"
+	},
+	{
+		"id" : 5,
+		"referencia" : "p_0005",
+		"nom" : "Producte 5",
+		"preu" : 1.00,
+		"iva" : 4.00,
+		"ean13" : null,
+		"categoria" : "B",
+		"subcategoria" : "2",
+		"imatge" : "5.png"
+	},
+	{
+		"id" : 6,
+		"referencia" : "p_0006",
+		"nom" : "Producte 6",
+		"preu" : 3.00,
+		"iva" : 21.00,
+		"ean13" : null,
+		"categoria" : "B",
+		"subcategoria" : "2",
+		"imatge" : "6.png"
+	},
+	{
+		"id" : 7,
+		"referencia" : "p_0007",
+		"nom" : "Producte 7",
+		"preu" : 1.25,
+		"iva" : 4.00,
+		"ean13" : null,
+		"categoria" : "B",
+		"subcategoria" : "2",
+		"imatge" : "7.png"
+	},
+	{
+		"id" : 8,
+		"referencia" : "p_0008",
+		"nom" : "Producte 8",
+		"preu" : 1.96,
+		"iva" : 10.00,
+		"ean13" : null,
+		"categoria" : "B",
+		"subcategoria" : "2",
+		"imatge" : "8.png"
+	},
+	{
+		"id" : 9,
+		"referencia" : "p_0009",
+		"nom" : "Producte 9",
+		"preu" : 3.45,
+		"iva" : 4.00,
+		"ean13" : null,
+		"categoria" : "C",
+		"subcategoria" : "3",
+		"imatge" : "9.png"
+	},
+	{
+		"id" : 10,
+		"referencia" : "p_0010",
+		"nom" : "Producte 10",
+		"preu" : 12.65,
+		"iva" : 21.00,
+		"ean13" : null,
+		"categoria" : "C",
+		"subcategoria" : "3",
+		"imatge" : "10.png"
+	},
+	{
+		"id" : 21,
+		"referencia" : "p_0011",
+		"nom" : "Producte 11",
+		"preu" : 11.00,
+		"iva" : 10.00,
+		"ean13" : null,
+		"categoria" : "C",
+		"subcategoria" : "3",
+		"imatge" : "11.png"
+	},
+	{
+		"id" : 22,
+		"referencia" : "p_0012",
+		"nom" : "Producte 12",
+		"preu" : 12.00,
+		"iva" : 4.00,
+		"ean13" : null,
+		"categoria" : "C",
+		"subcategoria" : "3",
+		"imatge" : "12.png"
+	},
+	{
+		"id" : 23,
+		"referencia" : "p_0013",
+		"nom" : "Producte 13",
+		"preu" : 1.90,
+		"iva" : 10.00,
+		"ean13" : null,
+		"categoria" : "D",
+		"subcategoria" : null,
+		"imatge" : "13.png"
+	},
+	{
+		"id" : 24,
+		"referencia" : "p_0014",
+		"nom" : "Producte 14",
+		"preu" : 9.65,
+		"iva" : 4.00,
+		"ean13" : null,
+		"categoria" : "E",
+		"subcategoria" : null,
+		"imatge" : "14.png"
+	},
+	{
+		"id" : 25,
+		"referencia" : "p_0015",
+		"nom" : "Producte 15",
+		"preu" : 4.86,
+		"iva" : 10.00,
+		"ean13" : null,
+		"categoria" : "G",
+		"subcategoria" : null,
+		"imatge" : "15.png"
+	},
+	{
+		"id" : 26,
+		"referencia" : "p_0016",
+		"nom" : "Producte 16",
+		"preu" : 3.95,
+		"iva" : 10.00,
+		"ean13" : null,
+		"categoria" : "H",
+		"subcategoria" : null,
+		"imatge" : "16.png"
+	},
+	{
+		"id" : 27,
+		"referencia" : "p_0017",
+		"nom" : "Producte 17",
+		"preu" : 1.23,
+		"iva" : 10.00,
+		"ean13" : null,
+		"categoria" : "H",
+		"subcategoria" : null,
+		"imatge" : "17.png"
+	},
+	{
+		"id" : 28,
+		"referencia" : "p_0018",
+		"nom" : "Producte 18",
+		"preu" : 12.90,
+		"iva" : 21.00,
+		"ean13" : null,
+		"categoria" : "H",
+		"subcategoria" : null,
+		"imatge" : "18.png"
+	},
+	{
+		"id" : 29,
+		"referencia" : "p_0019",
+		"nom" : "Producte 19",
+		"preu" : 2.12,
+		"iva" : 4.00,
+		"ean13" : null,
+		"categoria" : "G",
+		"subcategoria" : null,
+		"imatge" : "19.png"
+	},
+	{
+		"id" : 30,
+		"referencia" : "P_0020",
+		"nom" : "Producte 20",
+		"preu" : 11.20,
+		"iva" : 10.00,
+		"ean13" : null,
+		"categoria" : "G",
+		"subcategoria" : null,
+		"imatge" : "20.png"
+	}
+]

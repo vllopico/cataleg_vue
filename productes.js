@@ -5,6 +5,7 @@ new Vue
 	data:
 	{
 		cataleg: [],
+		ncataleg:[],
 		catalegOrg: [],
 		comanda:[],
 		categories:[],
@@ -30,7 +31,9 @@ new Vue
 			})
 			.then(function(data) {
 				data.forEach(function(item){
-					_this.cataleg.push({"referencia":item.referencia, "nom":item.nom, "preu":item.preu, "qini":1, "categoria":item.categoria, "imatge":item.imatge, "iva":item.iva});
+					_this.cataleg.push({"id":item.id,"referencia":item.referencia, "nom":item.nom, "preu":item.preu, "qini":1, "categoria":item.categoria, "imatge":item.imatge, "iva":item.iva});
+					_this.ncataleg[item.id] = {"referencia":item.referencia, "nom":item.nom, "preu":item.preu, "qini":1, "categoria":item.categoria, "imatge":item.imatge, "iva":item.iva};
+					
 					if(_this.categories.indexOf(item.categoria) === -1) {
 						_this.categories.push(item.categoria);
 						}
@@ -38,7 +41,6 @@ new Vue
 				//Calculem la pàginació. 8 per fulla.
 				_this.long = Math.ceil(_this.cataleg.length / 8);
 				_this.catalegOrg = _this.cataleg;
-				
 			})
 			.catch(function(err) {
 				console.error(err);
@@ -48,14 +50,14 @@ new Vue
 			
 			var i = 0;
 			var esta = false;
-			var base = parseInt(this.cataleg[index].qini) * parseFloat(this.cataleg[index].preu);
-			var totaliva = base * (1+parseFloat(this.cataleg[index].iva/100)) - base;
+			var base = parseInt(this.ncataleg[index].qini) * parseFloat(this.ncataleg[index].preu);
+			var totaliva = base * (1+parseFloat(this.ncataleg[index].iva/100)) - base;
 			var total = base + totaliva;
 			
 			while (i<this.comanda.length)
 			{
-				if (this.comanda[i].referencia == this.cataleg[index].referencia) {
-					this.comanda[i].quantitat = this.cataleg[index].qini;
+				if (this.comanda[i].referencia == this.ncataleg[index].referencia) {
+					this.comanda[i].quantitat = this.ncataleg[index].qini;
 					this.comanda[i].base = base;
 					this.comanda[i].totaliva = totaliva.toFixed(2);
 					this.comanda[i].total = total.toFixed(2);
@@ -69,11 +71,11 @@ new Vue
 				i = i + 1;
 			}
 			if (!esta) {
-				this.comanda.push({"referencia":this.cataleg[index].referencia,
-					"producte":this.cataleg[index].nom,
-					"quantitat":this.cataleg[index].qini, 
-					"preu":this.cataleg[index].preu, 
-					"iva":this.cataleg[index].iva,
+				this.comanda.push({"referencia":this.ncataleg[index].referencia,
+					"producte":this.ncataleg[index].nom,
+					"quantitat":this.ncataleg[index].qini, 
+					"preu":this.ncataleg[index].preu, 
+					"iva":this.ncataleg[index].iva,
 					"base": base,
 					"totaliva": totaliva.toFixed(2),
 					"total":total.toFixed(2)
@@ -148,9 +150,12 @@ new Vue
 		pagProductes() {
 			const number = 8;
 			return this.cataleg.slice((this.page - 1) * number, this.page * number);
+			
 		}
 	},
 	created: function(){ 
 		this.omplir_cataleg();
+		console.log("cataleg -> ", this.cataleg);
+		console.log("n cataleg -> ", this.ncataleg);
 	}
 })

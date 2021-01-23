@@ -155,7 +155,5 @@ new Vue
 	},
 	created: function(){ 
 		this.omplir_cataleg();
-		console.log("cataleg -> ", this.cataleg);
-		console.log("n cataleg -> ", this.ncataleg);
 	}
 })
